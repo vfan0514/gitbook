@@ -17,6 +17,9 @@ define([
         "weibo": function($el) {
             window.open("http://service.weibo.com/share/share.php?content=utf-8&url="+encodeURIComponent(url)+"&title="+encodeURIComponent(title))
         },
+        "qq": function($el) {
+            window.open("http://connect.qq.com/widget/shareqq/index.html?content=utf-8&url="+encodeURIComponent(url)+"&title="+encodeURIComponent(title))
+        },
         "instapaper": function($el) {
             window.open("http://www.instapaper.com/text?u="+encodeURIComponent(url));
         }
