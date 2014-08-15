@@ -52,6 +52,7 @@ define([
             $searchInput.val("");
             sidebar.filter(null);
             highlight.clearHighlight();
+            storage.remove("keyword");
         }
     };
 
