@@ -19,10 +19,6 @@
                 <span class="caret-inner"></span>
             </div>
             <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
                 <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
             </div>
         </div>
@@ -43,6 +39,20 @@
     {% endif %}
     {% if options.links.sharing.qq === true %}
     <a href="#" target="_blank" class="btn pull-right qq-sharing-link sharing-link" data-sharing="qq" aria-label="Share on QQ"><i class="fa fa-qq"></i></a>
+    {% endif %}
+    {% if options.links.sharing.weixin === true %}
+    <div class="dropdown pull-right">
+        <a href="#" class="btn weixin-toggle-dropdown weixin-sharing-link sharing-link" data-sharing="weixin"  aria-label="Share on QRCode"><i class="fa fa-weixin"></i></a>
+        <div class="dropdown-menu font-settings dropdown-left" id="dropdown-weixin">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="weixin" id="qrcode-weixin">
+                <input type="hidden" name="last_url" id="last_url" value="" />
+            </div>
+        </div>
+    </div>
     {% endif %}
 
     <!-- Title -->
