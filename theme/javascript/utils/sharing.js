@@ -28,7 +28,7 @@ define([
         "qq": function($el) {
             window.open("http://connect.qq.com/widget/shareqq/index.html?content=utf-8&url="+encodeURIComponent(url)+"&title="+encodeURIComponent(title)+"&desc="+encodeURIComponent(title))
         },
-        "weixin": function($el) {
+        "qrcode": function($el) {
             popQRCode();
         },
         "instapaper": function($el) {
@@ -50,17 +50,16 @@ define([
     };
 
     var popQRCode = function() {
-        var weixinDropdown = $("#dropdown-weixin");
-        if (weixinDropdown.hasClass("open")) {
-            weixinDropdown.removeClass("open");
+        var qrcodeDropdown = $("#dropdown-qrcode");
+        if (qrcodeDropdown.hasClass("open")) {
+            qrcodeDropdown.removeClass("open");
         } else {
             var lastUrl = $("#last_url");
             if (lastUrl[0] && lastUrl.val() !== url) {
-                var qrcodeWeixin = $("#qrcode-weixin");
                 qrcodeInfo.text = url;
-                new qrcode.qrcode(qrcodeWeixin[0], qrcodeInfo);
+                new qrcode.qrcode($("#qrcode")[0], qrcodeInfo);
             }
-            weixinDropdown.addClass("open");
+            qrcodeDropdown.addClass("open");
             lastUrl.val(url);
         }
     }
