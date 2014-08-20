@@ -90,7 +90,9 @@ Here are the options that can be stored in this file:
             "google": null,
             "facebook": null,
             "twitter": null,
-            "weibo": null,
+            "weibo": true,
+            "qq": true,
+            "weixin": true,
             "all": null
         }
     },
@@ -228,3 +230,13 @@ You can use the environment variable `DEBUG=true` to get better error messages (
 $ export DEBUG=true
 $ gitbook build ./
 ```
+
+## 进行的主要改动
+
+1. 支持中文搜索
+    需要生成所有文章内容的json格式索引文件，内容过多的话需要注意文件的体积
+1. 支持搜索后关键字高亮
+1. 支持分享到qq、微信（二维码）
+    分享到qq直接跳转至qq connect分享页面，该页面也可实现分享到qq空间和qq微博的功能
+    分享到微信直接生成二维码，也可分享到其他平台
+    需要在配置文件中设置相关选项为true
