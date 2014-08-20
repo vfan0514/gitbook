@@ -53,11 +53,14 @@
 
         {{ articles(summary.chapters) }}
 
-        {% if options.links.gitbook !== false %}
+        {% if options.links.tail !== false %}
         <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
+    	{% for link in options.links.tail %}
+    	    {% set _divider = true %}
+            <li>
+                <a href="{{ options.links.tail[loop.key] }}" target="blank" class="custom-link">{{ loop.key }}</a>
+            </li>
+    	{% endfor %}
         {% endif %}
     </ul>
 </div>
