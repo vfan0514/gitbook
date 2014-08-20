@@ -45,7 +45,7 @@ define([
             }
             var type = $(this).data("sharing");
 
-            types[type]($(this), e);
+            types[type]($(this));
         })
     };
 
