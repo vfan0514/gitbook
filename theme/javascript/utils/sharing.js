@@ -24,7 +24,8 @@ define([
             window.open("http://service.weibo.com/share/share.php?content=utf-8&url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent($("title").text()))
         },
         "qq": function($el) {
-            window.open("http://connect.qq.com/widget/shareqq/index.html?content=utf-8&url="+encodeURIComponent(url)+"&title="+encodeURIComponent(title)+"&desc="+encodeURIComponent(title))
+            var title = $("title").text();
+            window.open("http://connect.qq.com/widget/shareqq/index.html?content=utf-8&url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent(title)+"&desc="+encodeURIComponent(title))
         },
         "qrcode": function($el) {
             popQRCode();
