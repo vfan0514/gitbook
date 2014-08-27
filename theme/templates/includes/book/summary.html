@@ -4,7 +4,7 @@
         <li class="chapter {% if item.path == _input %}active{% endif %}" data-level="{{ item.level }}" {% if item.path && !externalLink %}data-path="{{ item.path|mdLink }}"{% endif %}>
             {% if item.path %}
                 {% if !externalLink %}
-                    <a href="{{ basePath }}/{{ item.path|mdLink }}">
+                    <a href="{{ basePath }}/{{ item.path|mdLink(item.level) }}">
                         <i class="fa fa-check"></i>
                         {% if item.level !== "0" %}
                             <b>{{ item.level }}.</b>
