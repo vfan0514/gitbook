@@ -255,3 +255,8 @@ $ gitbook build ./
     + 分享到qq直接跳转至qq connect分享页面，该页面也可实现分享到qq空间和qq微博的功能
     + 分享到微信直接生成二维码，也可分享到其他平台
     + 需要在配置文件中设置相关选项为true
+
+## 添加的插件
+
+1. 集成多说评论，见 [codepiano/gitbook-plugin-duoshuo](https://github.com/codepiano/gitbook-plugin-duoshuo)
+1. 集成畅言评论，见 [codepiano/gitbook-plugin-changyan](https://github.com/codepiano/gitbook-plugin-changyan)
