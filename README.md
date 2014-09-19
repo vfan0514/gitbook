@@ -26,7 +26,6 @@ npm install -g codepiano/gitbook
             "title": "你的介绍文件的标题"
         }
         ```
-    + 如果不需要介绍页面，可以不配置，SUMMARY.md中的第一项会成为主页
 
 ## 添加的插件
 
