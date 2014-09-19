@@ -1,6 +1,40 @@
 GitBook
 =======
 
+## 如何安装
+
+```shell
+npm install -g codepiano/gitbook
+```
+
+## 进行的主要改动
+
+1. 支持中文搜索
+    需要生成所有文章内容的json格式索引文件，内容过多的话需要注意文件的体积，开启压缩的话应该不会造成太大的负担
+1. 支持搜索后关键字高亮
+1. 支持分享到qq、微信（二维码）
+    + 分享到qq直接跳转至qq connect分享页面，该页面也可实现分享到qq空间和qq微博的功能
+    + 分享到微信直接生成二维码，也可分享到其他平台
+    + 需要在配置文件中设置相关选项为true
+1. 修改了介绍页面（即生成网站的主页）的方式，增加了一个新的指定方式
+    + 原始的gitbook介绍页面文件名必须为README.md，只可以自定义标题名称
+    + 修改后可以在配置文件book.json中指定介绍页面的标题和文件(相对)路径，可以不在SUMMARY.md文件中指定，在book.json中添加
+
+        ```
+        "introduction": {
+            "path": "你的介绍文件的路径",
+            "title": "你的介绍文件的标题"
+        }
+        ```
+    + 如果不需要介绍页面，可以不配置，SUMMARY.md中的第一项会成为主页
+
+## 添加的插件
+
+1. 集成多说评论，见 [codepiano/gitbook-plugin-duoshuo](https://github.com/codepiano/gitbook-plugin-duoshuo)
+1. 集成畅言评论，见 [codepiano/gitbook-plugin-changyan](https://github.com/codepiano/gitbook-plugin-changyan)
+
+------------------------------------------
+
 [![Build Status](https://travis-ci.org/GitbookIO/gitbook.png?branch=master)](https://travis-ci.org/GitbookIO/gitbook)
 [![NPM version](https://badge.fury.io/js/gitbook.svg)](http://badge.fury.io/js/gitbook)
 
@@ -245,18 +279,3 @@ You can use the environment variable `DEBUG=true` to get better error messages (
 $ export DEBUG=true
 $ gitbook build ./
 ```
-
-## 进行的主要改动
-
-1. 支持中文搜索
-    需要生成所有文章内容的json格式索引文件，内容过多的话需要注意文件的体积
-1. 支持搜索后关键字高亮
-1. 支持分享到qq、微信（二维码）
-    + 分享到qq直接跳转至qq connect分享页面，该页面也可实现分享到qq空间和qq微博的功能
-    + 分享到微信直接生成二维码，也可分享到其他平台
-    + 需要在配置文件中设置相关选项为true
-
-## 添加的插件
-
-1. 集成多说评论，见 [codepiano/gitbook-plugin-duoshuo](https://github.com/codepiano/gitbook-plugin-duoshuo)
-1. 集成畅言评论，见 [codepiano/gitbook-plugin-changyan](https://github.com/codepiano/gitbook-plugin-changyan)
