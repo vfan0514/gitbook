@@ -3,6 +3,10 @@ GitBook
 
 ## 如何安装
 
+由于使用的分词插件模块[nodejieba](https://github.com/aszxqw/nodejieba)，是使用nodejs对c++库的封装，所以安装依赖的时候要求机器上安装有c++编译环境
+
+windows的情况我不了解，linux和mac应该是使用的g++，linux使用包管理工具安装，mac可能需要安装一下 command line tools ，具体安装方式请google
+
 ```shell
 npm install -g codepiano/gitbook
 ```
