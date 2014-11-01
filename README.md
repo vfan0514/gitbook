@@ -111,6 +111,9 @@ Here are the options that can be stored in this file:
         }
     },
 
+    // Variables for templating
+    "variables": {},
+
     // Links in template (null: default, false: remove, string: new value)
     "links": {
     	// Custom links at top of sidebar
@@ -133,9 +136,6 @@ Here are the options that can be stored in this file:
 
     // Options for PDF generation
     "pdf": {
-        // Add toc at the end of the file
-        "toc": true,
-
         // Add page numbers to the bottom of every page
         "pageNumbers": false,
 
@@ -248,7 +248,7 @@ The platform [GitBook.io](https://www.gitbook.io/) is like an "Heroku for books"
 
 #### Plugins
 
-Plugins can used to extend your book's functionality. Read [GitbookIO/plugin](https://github.com/GitbookIO/plugin) for more information about how to build a plugin for GitBook.
+Plugins can be used to extend your book's functionality. Read [GitbookIO/plugin](https://github.com/GitbookIO/plugin) for more information about how to build a plugin for GitBook.
 
 ##### Official plugins:
 
@@ -258,6 +258,7 @@ Plugins can used to extend your book's functionality. Read [GitbookIO/plugin](ht
 | [quizzes](https://github.com/GitbookIO/plugin-quizzes) | Add interactive quizzes to your book. |
 | [mathjax](https://github.com/GitbookIO/plugin-mathjax) | Displays mathematical notation in the book. |
 | [mixpanel](https://github.com/GitbookIO/plugin-mixpanel) | Mixpanel tracking for your book |
+| [infinitescroll](https://github.com/GitbookIO/gitbook-plugin-infinitescroll) | Infinite Scrolling |
 
 ##### Other plugins:
 
