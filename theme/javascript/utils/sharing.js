@@ -45,7 +45,7 @@ define([
             var type = $(this).data("sharing");
 
             types[type]($(this));
-        })
+        });
     };
 
     var popQRCode = function() {
@@ -62,7 +62,7 @@ define([
             qrcodeDropdown.addClass("open");
             lastUrl.val(current_url);
         }
-    }
+    };
 
     return {
         init: init
