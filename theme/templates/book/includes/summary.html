@@ -58,7 +58,7 @@
     	{% for link in options.links.tail %}
     	    {% set _divider = true %}
             <li>
-                <a href="{{ options.links.tail[loop.key] }}" target="blank" class="custom-link">{{ loop.key }}</a>
+                <a href="{{ options.links.tail[loop.key] }}" target="_blank" class="custom-link">{{ loop.key }}</a>
             </li>
     	{% endfor %}
         {% endif %}
