@@ -19,7 +19,7 @@
         <li>
             {% if item.path %}
                 {% if !externalLink %}
-                    <a href="{{ basePath }}/{{ item.path|mdLink }}">{{ item.title }}</a>
+                    <a href="{{ basePath }}/{{ item.path|mdLink(item.level) }}">{{ item.title }}</a>
                 {% else %}
                     <a target="_blank" href="{{ item.path }}">{{ item.title }}</a>
                 {% endif %}
