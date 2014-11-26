@@ -6,7 +6,7 @@ GitBook
 
 由于使用的分词插件模块[nodejieba](https://github.com/aszxqw/nodejieba)，是使用nodejs对c++库的封装，所以安装依赖的时候要求机器上安装有c++编译环境
 
-windows的情况我不了解，linux和mac应该是使用的g++，linux使用包管理工具安装，mac可能需要安装一下 command line tools ，具体安装方式请google
+windows的情况我不了解，linux使用的是g++，linux使用包管理工具安装，mac可能需要安装一下 command line tools ，具体安装方式请google
 
 ```shell
 npm install -g codepiano/gitbook
@@ -31,6 +31,31 @@ npm install -g codepiano/gitbook
             "title": "你的介绍文件的标题"
         }
         ```
+1. 可以在目录栏底部添加自定义链接，在book.json中添加配置项
+    ```
+    "tail": {
+        "tilte1": "url1",
+        "title2": "url2"
+    }
+    ```
+1. 不再把google、facebook、twitter分享设置为默认，所有分享需要在配置文件中设置，才会出现在分享栏。
+    ```
+    "links": {
+        "sharing": {
+            "all"      : true,
+            "google"   : true,
+            "facebook" : true,
+            "twitter"  : true,
+            "weibo"    : true,
+            "qq"       : true,
+            "qrcode"   : true
+        }
+    }
+    ```
+1. 为了便于SEO，添加了keywords的meta标签，可以在book.json中配置
+    ```
+    "keywords": "keyword1,keyword2,keyword3"
+    ```
 
 ## 添加的插件
 
