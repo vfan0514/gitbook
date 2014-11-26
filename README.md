@@ -32,6 +32,7 @@ npm install -g codepiano/gitbook
         }
         ```
 1. 可以在目录栏底部添加自定义链接，在book.json中添加配置项
+
     ```
     "tail": {
         "tilte1": "url1",
@@ -39,6 +40,7 @@ npm install -g codepiano/gitbook
     }
     ```
 1. 不再把google、facebook、twitter分享设置为默认，所有分享需要在配置文件中设置，才会出现在分享栏。
+
     ```
     "links": {
         "sharing": {
@@ -53,6 +55,7 @@ npm install -g codepiano/gitbook
     }
     ```
 1. 为了便于SEO，添加了keywords的meta标签，可以在book.json中配置
+
     ```
     "keywords": "keyword1,keyword2,keyword3"
     ```
