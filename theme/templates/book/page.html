@@ -11,7 +11,8 @@
 {% endblock %}
 
 {% block title %}{{ progress.current.title }} | {{ title }}{% endblock %}
-{% block description %}{% if progress.current.level == "0" %}{{ description }}{% endif %}{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block keywords %}{{ keywords }}{% endblock %}
 
 {% block content %}
     <div class="book" data-level="{{ progress.current.level }}" data-basepath="{{ basePath }}" data-revision="{{ revision }}">
