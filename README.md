@@ -1,12 +1,23 @@
 GitBook
 =======
+
+可以点击下面的按钮进入gitter聊天室，有问题可以在里面问
+
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/codepiano/gitbook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## 例子
+
+[参考示例](http://www.wiz.cn/manual/windows/)
+
+[示例源文件](https://github.com/codepiano/wiz-manual)
 
 ## 如何安装
 
 由于使用的分词插件模块[nodejieba](https://github.com/aszxqw/nodejieba)，是使用nodejs对c++库的封装，所以安装依赖的时候要求机器上安装有c++编译环境
 
-windows的情况我不了解，linux使用的是g++，linux使用包管理工具安装，mac可能需要安装一下 command line tools ，具体安装方式请google
+windows的情况我不了解，linux使用的是g++
+
+linux使用包管理工具安装，mac可能需要安装一下 command line tools ，具体安装方式请google
 
 ```shell
 npm install -g codepiano/gitbook
