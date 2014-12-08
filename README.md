@@ -93,6 +93,11 @@ GitBook can be installed from **NPM** using:
 $ npm install gitbook -g
 ```
 
+Create the directories and files for a book from its [SUMMARY.md](https://github.com/GitbookIO/gitbook#book-format) file using 
+```
+$ gitbook init
+```
+
 You can serve a repository as a book using:
 
 ```
@@ -129,9 +134,10 @@ Here are the options that can be stored in this file:
     // It's not advised this option in the book.json
     "generator": "site",
 
-    // Book title and description (defaults are extracted from the README)
+    // Book metadats (somes are extracted from the README by default)
     "title": null,
     "description": null,
+    "isbn": null,
 
     // For ebook format, the extension to use for generation (default is detected from output extension)
     // "epub", "pdf", "mobi"
