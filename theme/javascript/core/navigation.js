@@ -122,7 +122,9 @@ define([
         });
 
         // Recreate first page when the page loads.
-        history.replaceState({ path: window.location.href }, '');
+        if (usePushState) {
+            history.replaceState({ path: window.location.href }, '');
+        }
 
         // Back Button Hijacking :(
         window.onpopstate = function (event) {

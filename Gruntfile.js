@@ -39,11 +39,11 @@ module.exports = function (grunt) {
                     baseUrl: "theme/javascript/",
                     out: "theme/assets/app.js",
                     preserveLicenseComments: false,
-                    optimize: "uglify",
+                    optimize: "",
                     include: ["requireLib"],
                     paths: {
                         "jQuery": '../vendors/jquery/dist/jquery',
-                        "lodash": '../vendors/lodash/dist/lodash',
+                        "lodash": '../ie8-compat/lodash.compat.min',
                         "requireLib": '../vendors/requirejs/require',
                         "Mousetrap": '../vendors/mousetrap/mousetrap',
                         "lunr": '../vendors/lunr.js/lunr',

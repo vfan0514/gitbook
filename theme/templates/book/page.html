@@ -50,6 +50,7 @@
 {% endblock %}
 
 {% block javascript %}
+<script src="http://cdn.staticfile.org/es5-shim/4.0.3/es5-shim.min.js"></script>
 <script src="{{ staticBase }}/app.js"></script>
 {% for resource in plugins.resources.js %}
     {% if resource.url %}

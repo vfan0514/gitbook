@@ -42,7 +42,7 @@ define([
         }
 
         progress[level] = state
-            ? Date.now()
+            ? (+new Date())
             : 0;
 
         storage.set("progress", progress);
