@@ -44,13 +44,6 @@ var makeBuildFunc = function(converter) {
         .then(function(output) {
             console.log("Successfully built!");
             return output;
-        })
-        .fail(function(err) {
-            // Log error
-            utils.logError(err);
-
-            // Exit process with failure code
-            process.exit(-1);
         });
     };
 };
