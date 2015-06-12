@@ -75,6 +75,7 @@ npm install -g codepiano/gitbook
 
 1. 集成多说评论，见 [codepiano/gitbook-plugin-duoshuo](https://github.com/codepiano/gitbook-plugin-duoshuo)
 1. 集成畅言评论，见 [codepiano/gitbook-plugin-changyan](https://github.com/codepiano/gitbook-plugin-changyan)
+1. 百度统计插件，通过事件监控页面点击，见 [codepiano/gitbook-plugin-baiduana](https://github.com/codepiano/gitbook-plugin-baiduana)
 
 ------------------------------------------
 
