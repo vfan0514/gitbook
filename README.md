@@ -71,7 +71,9 @@ npm install -g codepiano/gitbook
     "keywords": "keyword1,keyword2,keyword3"
     ```
 
-## 添加的插件
+## 一些的插件
+
+下面是我写的辅助插件，可以按需要进行安装使用
 
 1. 集成多说评论，见 [codepiano/gitbook-plugin-duoshuo](https://github.com/codepiano/gitbook-plugin-duoshuo)
 1. 集成畅言评论，见 [codepiano/gitbook-plugin-changyan](https://github.com/codepiano/gitbook-plugin-changyan)
