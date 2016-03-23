@@ -7,9 +7,7 @@ GitBook
 
 ## 例子
 
-[参考示例](http://www.wiz.cn/manual/windows/)
-
-[示例源文件](https://github.com/codepiano/wiz-manual)
+[示例](https://github.com/codepiano/wiz-manual)
 
 ## 如何安装
 
